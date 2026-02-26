@@ -44,13 +44,13 @@ function fnLimparCampos() {
     document.getElementById("categoria_veiculo").selectedIndex = 0;
 }
 
-// 6. Carregamento Inicial (Opcional - Página 19 do PDF)
+// 6. Carregamento Inicial (Página 19 do PDF)
 function fnCarregarDadosIniciais() {
     fetch('http://localhost:3000/veiculos')
         .then(res => res.json())
         .then(veiculos => {
             console.log("Veículos disponíveis:", veiculos);
-            // Aqui você pode chamar funções para atualizar a tela se necessário
+            //chamar funções para atualizar a tela se necessário
         })
         .catch(erro => console.log("Erro ao carregar:", erro.message));
 }
