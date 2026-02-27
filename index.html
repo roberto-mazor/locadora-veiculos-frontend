@@ -5,33 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locadora de Veículos</title>
-    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    <main class="tudo">
-        <div id="col1">
-            <img src="imagens/icone.png" alt="ícone de caminhão">
-            <h2 class="titulo">Encontre o veículo certo para você!</h2>
-            <p class="texto">Preencha as informações abaixo</p>
-            <form class="pedido">
-                <label class="rotulo">Nome</label>
-                <input type="text" id="nome_cliente" class="campo-texto"> <label class="rotulo">E-mail</label>
-                <input type="text" id="email_cliente" class="campo-texto"> <label class="rotulo">Selecione o tipo de veículo</label>
-                <select id="categoria_veiculo" class="campo-texto">
+<body class="bg-[#ffc107] font-[Arial] leading-none">
+    <main class="flex items-center justify-center h-screen">
+
+        <div id="col1"
+            class="bg-white w-[400px] text-center pt-[10px] px-[38px] pb-[38px] shadow-[0_4px_4px_0_rgba(0,0,0,0.5)]">
+            <img src="imagens/icone.png" alt="ícone de caminhão" class="inline-block">
+
+            <h2 class="text-[32px] mt-[14px] mb-[12px] font-bold leading-tight">
+                Encontre o veículo certo para você!
+            </h2>
+
+            <p class="text-[18px] font-bold">Preencha as informações abaixo</p>
+
+            <form class="mt-[32px] text-left">
+                <label class="font-bold text-[16px] block mb-[8px]">Nome</label>
+                <input type="text" id="nome_cliente"
+                    class="w-full text-[16px] text-[#434343] py-[7px] px-[13px] mb-[16px] border border-[#CED4DA] rounded-[4px] box-border">
+
+                <label class="font-bold text-[16px] block mb-[8px]">E-mail</label>
+                <input type="text" id="email_cliente"
+                    class="w-full text-[16px] text-[#434343] py-[7px] px-[13px] mb-[16px] border border-[#CED4DA] rounded-[4px] box-border">
+
+                <label class="font-bold text-[16px] block mb-[8px]">Selecione o tipo de veículo</label>
+                <select id="categoria_veiculo"
+                    class="w-full text-[16px] text-[#434343] py-[7px] px-[13px] mb-[16px] border border-[#CED4DA] rounded-[4px] box-border bg-white">
                     <option value="Básico">Básico</option>
                     <option value="Família">Família</option>
                     <option value="Luxo">Luxo</option>
                 </select>
 
-                <button type="button" id="btn_reservar" class="botao-reservar">FAZER MINHA RESERVA</button>
+                <button type="button" id="btn_reservar"
+                    class="w-full bg-[#FFC107] text-white leading-[150%] py-[6px] border-none font-bold uppercase text-[16px] mt-[16px] cursor-pointer">
+                    FAZER MINHA RESERVA
+                </button>
             </form>
         </div>
-        <div id="col2">
-            <h1 class="oferta">VOCÊ PODE ALUGAR ESSE VEÍCULO POR R$ <strong class="destaque">99</strong> / DIA</h1>
-            <p class="texto-oferta">Válido para todo território nacional</p>
-            <img src="imagens/renault-kwid.png" alt="Renault Kwid">
+
+        <div id="col2" class="w-[700px] ml-[39px]">
+            <h1 class="text-[36px] font-bold text-white">
+                VOCÊ PODE ALUGAR ESSE VEÍCULO POR R$ <strong class="text-[#445EE5]">99</strong> / DIA
+            </h1>
+            <p class="text-[18px] mt-[10px]">Válido para todo território nacional</p>
+            <img src="imagens/renault-kwid.png" alt="Renault Kwid" class="block">
         </div>
+
     </main>
     <script src="app.js"></script>
 </body>
