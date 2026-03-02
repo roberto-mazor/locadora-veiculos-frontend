@@ -1,4 +1,3 @@
-// 1. Verificação de Segurança (Nível 2 - T2.1)
 // Redireciona se não houver sinal de autenticação no navegador
 if (!localStorage.getItem("token")) {
     window.location.href = "../login.html"; 
